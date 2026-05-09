@@ -1,0 +1,19 @@
+{
+  "name": "pgats-programacao-para-automacao",
+  "version": "1.0.0",
+  "description": "Exercicio final da disciplina Programacao para Automacao de Testes da PGATS-2026-03",
+  "license": "ISC",
+  "author": "thiago.andrade",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx mocha"
+  },
+  "dependencies": {
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4"
+  }
+}
