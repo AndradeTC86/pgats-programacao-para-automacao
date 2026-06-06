@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha"
+    "test": "npx mocha test/**/*.js --reporter mochawesome"
   },
   "dependencies": {
     "mocha": "^11.7.5",
