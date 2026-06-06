@@ -33,9 +33,6 @@ jobs:
 
       - name: Executando os testes unitários
         run: npm test
-
-      - name: Renomear arquivo de relatório
-        run: mv ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
   
       - name: Checkout
         uses: actions/checkout@v4
