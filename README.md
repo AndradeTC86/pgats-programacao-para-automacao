@@ -43,5 +43,5 @@
 
   Os testes rodam na máquina Ubuntu mais recente, conforme a ação `runs-on:`
   A ação `actions/checkout@v4` faz o clone do projeto, enquanto que a ação `actions/setup-node@v4` realiza a instalação do Node.
-  Depois disso, a pipeline instala as dependências, executa os testes unitários e publica os resultados através do GitHub Pages utilizando a ação `peaceiris/actions-gh-pages@v3`
+  Depois disso, a pipeline instala as dependências, executa os testes unitários e publica os resultados através do GitHub Pages.
 <p>
