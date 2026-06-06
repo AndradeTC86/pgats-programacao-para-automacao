@@ -40,8 +40,8 @@ jobs:
       - name: Enviando artefato para o Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./mochawesome-report
+          path: ./mochawesome-report/mochawesome.html
 
-      - name: Publicando no gitHub Pages
+      - name: Publicando no GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
