@@ -10,10 +10,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha test/**/*.js --reporter mochawesome"
+    "test": "npx mocha test/**/*.js --reporter mochawesome --reporter-options reportFilename=index"
   },
   "dependencies": {
     "mocha": "^11.7.5",
-    "mochawesome": "^7.1.4"
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
