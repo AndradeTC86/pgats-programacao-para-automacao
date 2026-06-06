@@ -5,8 +5,8 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-06T20:04:19.809Z",
-    "end": "2026-06-06T20:04:19.812Z",
+    "start": "2026-06-06T20:18:47.586Z",
+    "end": "2026-06-06T20:18:47.589Z",
     "duration": 3,
     "testsRegistered": 2,
     "passPercent": 100,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "df79478b-8358-4b2d-b83e-6431cf860765",
+      "uuid": "2b7aa14d-31be-4bcf-8654-77a5e1984070",
       "title": "",
       "fullFile": "/home/runner/work/pgats-programacao-para-automacao/pgats-programacao-para-automacao/test/servicoDePagamentos.test.js",
       "file": "/test/servicoDePagamentos.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "11751986-d3d4-413a-9ebb-707559b3a84c",
+          "uuid": "46a50973-b24d-47c5-aa8b-6e2299ebc6f0",
           "title": "Testes do serviço de pagamentos",
           "fullFile": "/home/runner/work/pgats-programacao-para-automacao/pgats-programacao-para-automacao/test/servicoDePagamentos.test.js",
           "file": "/test/servicoDePagamentos.test.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const servicoDePagamentos = new ServicoDePagamentos()\nservicoDePagamentos.realizarPagamentos('12345-67890', 'CEMIG', 100)\n\nconst meuPagamento = servicoDePagamentos.consultarUltimoPagamento()\n\nassert.equal(meuPagamento.codigoBarrasPagamento, '12345-67890')\nassert.equal(meuPagamento.beneficiarioPagamento,'CEMIG')\nassert.equal(meuPagamento.valorPagamento, 100)\nassert.equal(meuPagamento.categoriaPagamento,'padrao')",
               "err": {},
-              "uuid": "0364e4e3-51b6-4c42-939e-4595c58e99ec",
-              "parentUUID": "11751986-d3d4-413a-9ebb-707559b3a84c",
+              "uuid": "eca14ecb-39fd-49ab-91aa-a85dfbc31e68",
+              "parentUUID": "46a50973-b24d-47c5-aa8b-6e2299ebc6f0",
               "isHook": false,
               "skipped": false
             },
@@ -65,16 +65,16 @@
               "context": null,
               "code": "const servicoDePagamentos = new ServicoDePagamentos()\nservicoDePagamentos.realizarPagamentos('12345-67890', 'CEMIG', 101)\n\nconst meuPagamento = servicoDePagamentos.consultarUltimoPagamento()\n\nassert.equal(meuPagamento.codigoBarrasPagamento, '12345-67890')\nassert.equal(meuPagamento.beneficiarioPagamento,'CEMIG')\nassert.equal(meuPagamento.valorPagamento, 101)\nassert.equal(meuPagamento.categoriaPagamento,'cara')",
               "err": {},
-              "uuid": "afb0f0ad-4560-4c79-a80b-10be19b78089",
-              "parentUUID": "11751986-d3d4-413a-9ebb-707559b3a84c",
+              "uuid": "71722274-eaea-4fba-8c75-b13cd6494db9",
+              "parentUUID": "46a50973-b24d-47c5-aa8b-6e2299ebc6f0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0364e4e3-51b6-4c42-939e-4595c58e99ec",
-            "afb0f0ad-4560-4c79-a80b-10be19b78089"
+            "eca14ecb-39fd-49ab-91aa-a85dfbc31e68",
+            "71722274-eaea-4fba-8c75-b13cd6494db9"
           ],
           "failures": [],
           "pending": [],
