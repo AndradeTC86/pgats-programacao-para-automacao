@@ -30,6 +30,9 @@ jobs:
       - name: Executando os testes unitários
         run: npm test
 
+      - name: Renomear arquivo de relatório
+        run: mv ./mochawesome-report/mochawesome.html ./mochawesome-report/index.html
+
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         with:
