@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2026-06-06T19:55:47.545Z",
-    "end": "2026-06-06T19:55:47.549Z",
-    "duration": 4,
+    "start": "2026-06-06T20:04:19.809Z",
+    "end": "2026-06-06T20:04:19.812Z",
+    "duration": 3,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9d954cce-1ada-4807-af20-1e8a353d7065",
+      "uuid": "df79478b-8358-4b2d-b83e-6431cf860765",
       "title": "",
       "fullFile": "/home/runner/work/pgats-programacao-para-automacao/pgats-programacao-para-automacao/test/servicoDePagamentos.test.js",
       "file": "/test/servicoDePagamentos.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "04696086-9ed8-4fd9-8966-af56b1e11018",
+          "uuid": "11751986-d3d4-413a-9ebb-707559b3a84c",
           "title": "Testes do serviço de pagamentos",
           "fullFile": "/home/runner/work/pgats-programacao-para-automacao/pgats-programacao-para-automacao/test/servicoDePagamentos.test.js",
           "file": "/test/servicoDePagamentos.test.js",
@@ -38,7 +38,7 @@
               "title": "Deve cadastrar o pagamento com a categoria padrão quando o valor é igual ou menor do que R$100,00",
               "fullTitle": "Testes do serviço de pagamentos Deve cadastrar o pagamento com a categoria padrão quando o valor é igual ou menor do que R$100,00",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const servicoDePagamentos = new ServicoDePagamentos()\nservicoDePagamentos.realizarPagamentos('12345-67890', 'CEMIG', 100)\n\nconst meuPagamento = servicoDePagamentos.consultarUltimoPagamento()\n\nassert.equal(meuPagamento.codigoBarrasPagamento, '12345-67890')\nassert.equal(meuPagamento.beneficiarioPagamento,'CEMIG')\nassert.equal(meuPagamento.valorPagamento, 100)\nassert.equal(meuPagamento.categoriaPagamento,'padrao')",
               "err": {},
-              "uuid": "ca2427b5-ede8-47f2-a8dc-a2f8ff83eac7",
-              "parentUUID": "04696086-9ed8-4fd9-8966-af56b1e11018",
+              "uuid": "0364e4e3-51b6-4c42-939e-4595c58e99ec",
+              "parentUUID": "11751986-d3d4-413a-9ebb-707559b3a84c",
               "isHook": false,
               "skipped": false
             },
@@ -65,21 +65,21 @@
               "context": null,
               "code": "const servicoDePagamentos = new ServicoDePagamentos()\nservicoDePagamentos.realizarPagamentos('12345-67890', 'CEMIG', 101)\n\nconst meuPagamento = servicoDePagamentos.consultarUltimoPagamento()\n\nassert.equal(meuPagamento.codigoBarrasPagamento, '12345-67890')\nassert.equal(meuPagamento.beneficiarioPagamento,'CEMIG')\nassert.equal(meuPagamento.valorPagamento, 101)\nassert.equal(meuPagamento.categoriaPagamento,'cara')",
               "err": {},
-              "uuid": "5fa3d3d3-7f4e-4689-9b29-f07dbaa96237",
-              "parentUUID": "04696086-9ed8-4fd9-8966-af56b1e11018",
+              "uuid": "afb0f0ad-4560-4c79-a80b-10be19b78089",
+              "parentUUID": "11751986-d3d4-413a-9ebb-707559b3a84c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ca2427b5-ede8-47f2-a8dc-a2f8ff83eac7",
-            "5fa3d3d3-7f4e-4689-9b29-f07dbaa96237"
+            "0364e4e3-51b6-4c42-939e-4595c58e99ec",
+            "afb0f0ad-4560-4c79-a80b-10be19b78089"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 0,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
